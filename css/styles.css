@@ -30,7 +30,7 @@ a, .hero.is-info .tabs.is-boxed li.is-active a  {
   background-color: #B9B9B9 !important;
 }
 
-.tag:not(body).is-danger {
+.tag:not(body).is-danger, .button.is-danger {
   background-color: #EA002F;
 }
 
