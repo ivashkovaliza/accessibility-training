@@ -3,6 +3,8 @@
   var menu = document.querySelector("#" + burger.dataset.target);
   var btnTranscription = document.querySelector(".btn-transcription");
   var transcription = document.querySelector("#transcription-text");
+  var changeablePost = document.querySelector("#changeable-post");
+  var flag = 1;
 
   burger.addEventListener("click", function() {
     burger.classList.toggle("is-active");
@@ -12,6 +14,11 @@
   btnTranscription.addEventListener("click", function() {
     transcription.classList.toggle("is-active-transcription");
   });
+
+ setInterval(function() {
+    changeablePost.textContent = flag % 2 ?  'What is Lorem Ipsum?' : 'Why do we use Ipsum?';
+    flag++;
+  }, 60000);
 })();
 
 document.querySelectorAll("#nav li").forEach(function(navEl) {
@@ -43,3 +50,4 @@ function toggleTab(selectedNav, targetId) {
     }
   });
 }
+

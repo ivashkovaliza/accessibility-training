@@ -1,7 +1,7 @@
 a:focus, button:focus, input:focus,
 textarea:focus, select:focus, .button:focus, .input:focus,
 a.box:focus, .input.is-success:focus, .input.is-danger:focus,
-.select select:focus, .textarea:focus {
+.select select:focus, .textarea:focus, *:focus{
   outline: 2px solid #EA002F;
   border-color: transparent;
   box-shadow: none;
@@ -18,7 +18,7 @@ a.box:focus, .input.is-success:focus, .input.is-danger:focus,
 a, .hero.is-info .tabs.is-boxed li.is-active a  {
   color: #2569DA;
 }
-.hero.is-info .subtitle{
+.hero.is-info .subtitle, .navbar-burger {
   color: #FFFFFF;
 }
 
@@ -44,6 +44,19 @@ a, .hero.is-info .tabs.is-boxed li.is-active a  {
 
 .help.is-success {
   color: #15863D;
+}
+.navbar-burger {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-burger span {
+  height: 2px;
+  width: 20px;
+}
+.navbar-burger:hover {
+  color: white;
+  background-color: black;
 }
 
 .hero-bg {
@@ -257,4 +270,8 @@ fieldset {
 }
 .is-active-transcription {
   display: block;
+}
+
+.small {
+  font-size: 14px;
 }
