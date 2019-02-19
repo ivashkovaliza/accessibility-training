@@ -275,3 +275,39 @@ fieldset {
 .small {
   font-size: 14px;
 }
+
+.tabs.is-boxed button {
+  border: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.tabs button {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: .5em 1em;
+  vertical-align: top;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: inherit;
+}
+
+.tabs button:focus {
+  outline-offset: -3px;
+}
+
+.hero.is-info .tabs.is-boxed li.is-active button, .hero.is-info .tabs.is-boxed li.is-active button:hover, .hero.is-info .tabs.is-toggle li.is-active button, .hero.is-info .tabs.is-toggle li.is-active button:hover {
+  color: #194f73;
+}
+.hero.is-info .tabs.is-boxed li.is-active button,
+.hero.is-info .tabs.is-toggle li.is-active button {
+  background-color: #fff;
+  border-color: #fff;
+  color: #209cee;
+}
+
+.hero.is-info .tabs.is-boxed button:hover,
+.hero.is-info .tabs.is-toggle button:hover {
+  background-color: rgba(10,10,10,.1);
+}

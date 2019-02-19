@@ -340,7 +340,7 @@
       </div>
     </section>
 
-    <div aria-labelledby="list-of-topics">
+    <section aria-labelledby="list-of-topics">
       <div class="hero is-info">
         <div class="hero-body">
           <div class="container">
@@ -350,29 +350,29 @@
         </div>
         <div class="tabs is-boxed is-centered main-menu" id="nav">
           <ul role="tablist" aria-label="List of our main topics">
-            <li data-target="pane-1" id="1">
-              <a role="tab" aria-selected="false" aria-controls="pane-1">
+            <li data-target="pane-1" id="1" role="presentation">
+              <button role="tab" aria-selected="false" aria-controls="pane-1">
                   <span class="icon is-small"><span aria-hidden="true" class="fa fa-image"></span></span>
                 <h3 id="pictures">Pictures</h3>
-              </a>
+              </button>
             </li>
-            <li data-target="pane-2" id="2" class="is-active">
-              <a role="tab" aria-selected="true" aria-controls="pane-2">
+            <li data-target="pane-2" id="2" class="is-active" role="presentation">
+              <button role="tab" aria-selected="true" aria-controls="pane-2">
                 <span class="icon is-small"><span aria-hidden="true" class="fab fa-empire"></span></span>
                 <h3 id="article">Article</h3>
-              </a>
+              </button>
             </li>
-            <li data-target="pane-3" id="3">
-              <a role="tab" aria-selected="false" aria-controls="pane-3">
+            <li data-target="pane-3" id="3" role="presentation">
+              <button role="tab" aria-selected="false" aria-controls="pane-3" >
                 <span class="icon is-small"><span aria-hidden="true" class="fab fa-superpowers"></span></span>
                 <h3 id="team">Team</h3>
-              </a>
+              </button>
             </li>
-            <li data-target="pane-4" id="4">
-              <a role="tab" aria-selected="false" aria-controls="pane-4">
+            <li data-target="pane-4" id="4" role="presentation">
+              <button role="tab" aria-selected="false" aria-controls="pane-4">
                 <span class="icon is-small"><span aria-hidden="true" class="fa fa-film"></span></span>
                 <h3 id="video">Video</h3>
-              </a>
+              </button>
             </li>
           </ul>
         </div>
@@ -431,86 +431,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section role="tabpanel" aria-labelledby="team" class="tab-pane" id="pane-3">
-          <div class="columns medias">
-            <div class="column">
-              <div class="media">
-                <div class="media-left">
-                  <span aria-hidden="true" class="fab fa-github-square fa-4x"></span>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a class="link-among-text" href="#"><strong>Dominic Ipsum</strong></a>
-                      <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="media">
-                <div class="media-left">
-                  <span aria-hidden="true" class="fab fa-empire fa-4x"></span>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a class="link-among-text" href="#"><strong>Cassie Ipsum</strong></a>
-                      <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="media">
-                <div class="media-left">
-                  <span aria-hidden="true" class="fab fa-ravelry fa-4x"></span>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a class="link-among-text" href="#"><strong>Avery Ipsum</strong></a>
-                      <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="media">
-                <div class="media-left">
-                  <span aria-hidden="true" class="fab fa-github-alt fa-4x"></span>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <a class="link-among-text" href="#"><strong>io Ipsum</strong></a>
-                      <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section role="tabpanel" aria-labelledby="video" class="tab-pane" id="pane-4">
-          <div class="columns is-centered">
-            <div class="column is-three-quarters">
-              <div class="title has-text-centered">Inspired video</div>
-              <div class="embed-container image">
-                <iframe src="https://player.vimeo.com/video/261794608" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-              </div>
-              <button type="button" class="button btn-transcription">Show/hide transcription</button>
-              <p id="transcription-text" class="transcription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                It has survived not only five centuries, but also the leap into electronic typesetting, 
-                remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
-                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
           </div>
         </section>
@@ -605,6 +525,86 @@
             </figure>
             <h6 class="is-6 title">Sixth level</h6>
             <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
+          </div>
+        </section>
+
+        <section role="tabpanel" aria-labelledby="team" class="tab-pane" id="pane-3">
+          <div class="columns medias">
+            <div class="column">
+              <div class="media">
+                <div class="media-left">
+                  <span aria-hidden="true" class="fab fa-github-square fa-4x"></span>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <a class="link-among-text" href="#"><strong>Dominic Ipsum</strong></a>
+                      <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <span aria-hidden="true" class="fab fa-empire fa-4x"></span>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <a class="link-among-text" href="#"><strong>Cassie Ipsum</strong></a>
+                      <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="media">
+                <div class="media-left">
+                  <span aria-hidden="true" class="fab fa-ravelry fa-4x"></span>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <a class="link-among-text" href="#"><strong>Avery Ipsum</strong></a>
+                      <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <span aria-hidden="true" class="fab fa-github-alt fa-4x"></span>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <a class="link-among-text" href="#"><strong>io Ipsum</strong></a>
+                      <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section role="tabpanel" aria-labelledby="video" class="tab-pane" id="pane-4">
+          <div class="columns is-centered">
+            <div class="column is-three-quarters">
+              <div class="title has-text-centered">Inspired video</div>
+              <div class="embed-container image">
+                <iframe src="https://player.vimeo.com/video/261794608" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+              </div>
+              <button type="button" class="button btn-transcription">Show/hide transcription</button>
+              <p id="transcription-text" class="transcription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged. It was popularised in the 1960s with the release of 
+                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
           </div>
         </section>
       </div>
@@ -1080,7 +1080,7 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light"><aria-hidden="true" span class="fa fa-comments"></span> 2</span>
+                    <span class="has-text-grey-light"><span aria-hidden="true" span class="fa fa-comments"></span> 2</span>
                   </div>
                 </div>
               </div>
@@ -1410,5 +1410,6 @@
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
   <script async src="js/custom.js"></script>
+  <script async src="js/tabs.js"></script>
 </body>
 </html>
