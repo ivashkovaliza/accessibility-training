@@ -129,7 +129,7 @@ a, .hero.is-info .tabs.is-boxed li.is-active a  {
   font-size: 8rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  color: #209cee;
+  color: #0846da;
 }
 
 .is-shady {
@@ -304,7 +304,7 @@ fieldset {
 .hero.is-info .tabs.is-toggle li.is-active button {
   background-color: #fff;
   border-color: #fff;
-  color: #209cee;
+  color: #0846da;
 }
 
 .hero.is-info .tabs.is-boxed button:hover,

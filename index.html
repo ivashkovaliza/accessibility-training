@@ -12,7 +12,7 @@
 <body>
   <header>
 
-    <a href="#main" class="visuallyhidden skip-to">Skip to main</a>
+    <a href="#main" class="visuallyhidden skip-to">Skip to team registration form</a>
 
     <div class="hero hero-bg is-fullheight">
       <div class="hero-head">
@@ -64,6 +64,11 @@
                   <span class="icon">
                     <span aria-hidden="true" class="fa fa-external-link-alt"></span>
                   </span>
+                </a>
+              </span>
+                <span class="navbar-item">
+                <a class="button is-white is-outlined" href="#team-registration">
+                  <span>Team Registration</span>
                 </a>
               </span>
               </div>
@@ -1090,42 +1095,66 @@
       </div>
     </section>
 
-    <section aria-labelledby="contact-us" class="section has-background-light">
+    <section id="team-registration" aria-labelledby="register-my-team" class="section has-background-light">
       <div class="container">
         <div class="section-heading has-text-centered">
-          <h2 class="title is-2" id="contact-us">Contact us</h2>
-          <div class="subtitle is-5">Don't hesitate, ask anything</div>
+          <h2 class="title is-2" id="register-my-team">Register My Team</h2>
+          <div class="subtitle is-5">Don't hesitate,
+            become part of an amazing team</div>
         </div>
 
         <form class="column is-half is-offset-one-quarter box">
+          <div class="field">
+            <label class="label" for="username">Username</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" aria-placeholder="Enter your username" aria-invalid="true" aria-required="true" type="text" id="username">
+              <span class="icon is-small is-right">
+                    <span aria-hidden="true" class="fas fa-check"></span>
+                  </span>
+            </div>
+            <p class="help is-success">This username is available</p>
+          </div>
           <div class="field">
             <label class="label" for="name">Name</label>
             <div class="control">
               <input class="input" type="text" aria-placeholder="Enter your name" aria-invalid="true" aria-required="true" placeholder="Text input" id="name">
             </div>
           </div>
-
           <div class="field">
-            <label class="label" for="username">Username</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input is-success" aria-placeholder="Enter your username" aria-invalid="true" aria-required="true" type="text" id="username">
-              <span class="icon is-small is-left">
-                <span aria-hidden="true" class="fas fa-user"></span>
-              </span>
-              <span class="icon is-small is-right">
-                <span aria-hidden="true" class="fas fa-check"></span>
-              </span>
+            <label class="label" for="surname">Surname</label>
+            <div class="control">
+              <input class="input" type="text" aria-placeholder="Enter your name" aria-invalid="true" aria-required="true" placeholder="Text input" id="surname">
             </div>
-            <p class="help is-success">This username is available</p>
+          </div>
+          <div class="field">
+            <label class="label" for="phone-number">Phone number</label>
+            <div class="control">
+              <input class="input" type="text" aria-placeholder="Enter your name" aria-invalid="true" aria-required="true" placeholder="Text input" id="phone-number">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" for="address">Address</label>
+            <div class="control">
+              <input class="input" type="text" aria-placeholder="Enter your name" aria-invalid="true" aria-required="true" placeholder="Text input" id="address">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" for="year-of-birth">Year of birth</label>
+            <div class="control">
+              <input class="input" type="text" aria-placeholder="Enter your name" aria-invalid="true" aria-required="true" placeholder="Text input" id="year-of-birth">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label" for="postcode">Postcode</label>
+            <div class="control">
+              <input class="input" type="text" aria-placeholder="Enter your name" aria-invalid="true" aria-required="true" placeholder="Text input" id="postcode">
+            </div>
           </div>
 
           <div class="field">
             <label class="label" for="email">Email</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-danger" type="email" aria-placeholder="Enter your email name@address.com" aria-invalid="true" placeholder="Email input" value="hello@" id="email" aria-required="true">
-              <span class="icon is-small is-left">
-                <span aria-hidden="true"class="fas fa-envelope"></span>
-              </span>
+              <input class="input is-danger" type="email" aria-placeholder="Enter your email name@address.com" aria-invalid="true" placeholder="Email input" id="email" aria-required="true">
               <span class="icon is-small is-right">
                 <span aria-hidden="true" class="fas fa-exclamation-triangle"></span>
               </span>
@@ -1133,57 +1162,9 @@
             <p class="help is-danger">This email is invalid</p>
           </div>
 
-          <div class="field">
-            <label class="label" for="subject">Subject</label>
-            <div class="control">
-              <div class="select">
-                <select id="subject" aria-required="true">
-                  <option>Select dropdown</option>
-                  <option>With options</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label" for="message">Message</label>
-            <div class="control">
-              <textarea class="textarea" placeholder="Textarea" id="message" aria-placeholder="Enter the message with your questions"></textarea>
-            </div>
-          </div>
-
-          <div class="field">
-            <div class="control">
-              <label class="checkbox">
-                <input type="checkbox" aria-checked="false">
-                I agree to the <a class="link-among-text" href="#">terms and conditions</a>
-              </label>
-            </div>
-          </div>
-
-          <div class="field">
-            <div class="control">
-              <fieldset>
-                <legend class="visuallyhidden" style="border-color: transparent">do you agree to the callback</legend>
-                <label class="radio">
-                  <input type="radio" aria-checked="false" name="question">
-                  Yes
-                </label>
-                <label class="radio">
-                  <input type="radio" aria-checked="false" name="question">
-                  No
-                </label>
-              </fieldset>
-
-            </div>
-          </div>
-
           <div class="field is-grouped">
             <div class="control">
               <button class="button is-link">Submit</button>
-            </div>
-            <div class="control">
-              <button type="reset" class="button is-danger">Cancel</button>
             </div>
           </div>
         </form>
@@ -1411,5 +1392,6 @@
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
   <script async src="js/custom.js"></script>
   <script async src="js/tabs.js"></script>
+  <script async src="js/form.js"></script>
 </body>
 </html>
