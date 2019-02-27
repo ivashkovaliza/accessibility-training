@@ -1,7 +1,7 @@
 a:focus, button:focus, input:focus,
 textarea:focus, select:focus, .button:focus, .input:focus,
 a.box:focus, .input.is-success:focus, .input.is-danger:focus,
-.select select:focus, .textarea:focus, *:focus{
+.select select:focus, .textarea:focus, .regionnotice:focus, *:focus{
   outline: 2px solid #EA002F;
   border-color: transparent;
   box-shadow: none;
@@ -35,7 +35,24 @@ a, .hero.is-info .tabs.is-boxed li.is-active a  {
 }
 
 .help.is-danger {
+  font-size: 16px;
   color: #EA002F;
+}
+
+.regionnotice {
+  font-size: 16px;
+  color: #EA002F; 
+  border: 1px solid #EA002F;
+  padding: 15px;
+}
+
+.regionnotice a {
+  color: #EA002F;
+  text-decoration: underline;
+}
+
+.regionnotice ol {
+  padding-left: 20px;
 }
 
 .tag:not(body).is-success {

@@ -7,6 +7,7 @@
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'>
   <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'>
   <link rel="stylesheet prefetch" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -1104,15 +1105,14 @@
         </div>
 
         <form id="team-registration-form" class="column is-half is-offset-one-quarter box">
-          <div class="field">
+          <div id="username-field" class="field">
             <label class="label" for="username">Username</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input is-success" aria-placeholder="Enter your username" aria-invalid="true" aria-required="true" type="text" id="username">
+            <div class="control has-icons-right">
+              <input class="input" aria-placeholder="Enter your username" aria-invalid="true" aria-required="true" type="text" id="username">
               <span class="icon is-small is-right">
                     <span aria-hidden="true" class="fas fa-check"></span>
                   </span>
-            </div>
-            <p class="help is-success">This username is available</p>
+            </div>            
           </div>
           <!--<div class="field">
             <label class="label" for="name">Name</label>
@@ -1141,7 +1141,7 @@
           <div class="field">
             <label class="label" for="year-of-birth">Year of birth</label>
             <div class="control">
-              <input class="input" type="text" aria-placeholder="Enter your name" aria-invalid="true" aria-required="true" placeholder="Text input" id="year-of-birth">
+              <input class="input" type="text" aria-placeholder="Enter your name" aria-invalid="true" aria-required="true" placeholder="Text input" id="year-of-birth" aria-disabled="true" disabled>
             </div>
           </div>
           <div class="field">
@@ -1149,22 +1149,22 @@
             <div class="control">
               <input class="input" type="text" aria-placeholder="Enter your name" placeholder="Text input" id="postcode">
             </div>
-          </div>-->
+          </div>
 
           <div class="field">
             <label class="label" for="email">Email</label>
-            <div class="control has-icons-left has-icons-right">
+            <div class="control has-icons-right">
               <input class="input is-danger" type="email" aria-placeholder="Enter your email name@address.com" aria-invalid="true" placeholder="Email input" id="email" aria-required="true">
               <span class="icon is-small is-right">
                 <span aria-hidden="true" class="fas fa-exclamation-triangle"></span>
               </span>
             </div>
             <p class="help is-danger">This email is invalid</p>
-          </div>
+          </div>-->
 
           <div class="field is-grouped">
             <div class="control">
-              <button id="submit-btn" class="button is-link">Submit</button>
+              <input type="submit" id="submit-btn" class="button is-link" value="Sybmit"></input>
             </div>
           </div>
         </form>
