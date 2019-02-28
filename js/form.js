@@ -24,7 +24,9 @@ function addDataFromForm(e) {
     checkValidityPhone();
     checkValidityEmail();
     checkEqualNameAndSurname();
+
     if(!document.getElementById('year-of-birth').hasAttribute('disabled')) {
+        console.log('Year error');
         checkValidityYear();
     }
 
@@ -50,23 +52,20 @@ function addDataFromForm(e) {
         postcode: document.getElementById('postcode').value,
         email: document.getElementById('email').value
     });
-   
-    //resetFormValues();
+  
     console.log(teamMemmbersArray);
     alert('The form is successfully submitted');
-}
-
-function resetFormValues() {
-    document.querySelector("#team-registration-form").reset();
 }
 
 function checkValidityUsername() {
     $usernameError.remove();
 
     if(document.getElementById('username').value === "") {
+        console.log('username-empty');
         createUsernameError()
     } else {
         document.getElementById('username').setAttribute('aria-invalid','false');
+        document.getElementById('username').removeAttribute('aria-describedby');
     }
 
     teamMemmbersArray.forEach(element => {
@@ -74,6 +73,7 @@ function checkValidityUsername() {
             createUsernameError();            
         } else {
             document.getElementById('username').setAttribute('aria-invalid','false');
+            document.getElementById('username').removeAttribute('aria-describedby');
         }
     });    
 }
@@ -90,6 +90,7 @@ function checkValidityEmail() {
         errorsArray.push($('<li><a href="#email">Please enter a email</a></li>'));
     }   else {
         document.getElementById('email').setAttribute('aria-invalid','false');
+        document.getElementById('email').removeAttribute('aria-describedby');
     }  
 }
 
@@ -104,6 +105,7 @@ function checkValidityPhone() {
         errorsArray.push($('<li><a href="#phone-number">Please enter a phone</a></li>'));
     }   else {
         document.getElementById('phone-number').setAttribute('aria-invalid','false');
+        document.getElementById('phone-number').removeAttribute('aria-describedby');
     }     
 }
 
@@ -115,10 +117,6 @@ function checkEqualNameAndSurname() {
             errorsAmount++;
             document.getElementById('year-of-birth').removeAttribute('disabled');
             document.getElementById('year-of-birth').setAttribute('aria-disabled','false');
-            document.getElementById('year-of-birth').setAttribute('aria-invalid','true');
-            document.getElementById('year-of-birth').setAttribute('aria-describedby','year-error');
-            $('#year-of-birth-field').append($yearError);
-            errorsArray.push($('<li><a href="#year-of-birth">Please enter your year of birth</a></li>'));
         }
     });
 }
@@ -134,6 +132,7 @@ function checkValidityName() {
         errorsArray.push($('<li><a href="#name">Please enter a name</a></li>'));
     } else {
         document.getElementById('name').setAttribute('aria-invalid','false');
+        document.getElementById('name').removeAttribute('aria-describedby');
     }       
 }
 
@@ -148,6 +147,7 @@ function checkValiditySurname() {
         errorsArray.push($('<li><a href="#surname">Please enter a surname</a></li>'));
     } else {
         document.getElementById('surname').setAttribute('aria-invalid','false');
+        document.getElementById('surname').removeAttribute('aria-describedby');
     }       
 }
 
@@ -162,6 +162,7 @@ function checkValidityAddress() {
         errorsArray.push($('<li><a href="#address">Please enter an address</a></li>'));
     } else {
         document.getElementById('address').setAttribute('aria-invalid','false');
+        document.getElementById('address').removeAttribute('aria-describedby');
     }       
 }
 
@@ -169,6 +170,7 @@ function checkValidityYear() {
     $yearError.remove();
     
     if(!/^[1-9][0-9]{3}$/.test(document.getElementById('year-of-birth').value) || document.getElementById('year-of-birth').value === "") {
+        console.log('checkValidityYear invalid')
         errorsAmount++;
         document.getElementById('year-of-birth').setAttribute('aria-invalid','true');
         document.getElementById('year-of-birth').setAttribute('aria-describedby','year-error');
@@ -176,6 +178,7 @@ function checkValidityYear() {
         errorsArray.push($('<li><a href="#year-of-birth">Please enter your year of birth</a></li>'));
     } else {
         document.getElementById('year-of-birth').setAttribute('aria-invalid','false');
+        document.getElementById('year-of-birth').removeAttribute('aria-describedby');
     } 
 }
 
