@@ -29,6 +29,7 @@ function addDataFromForm(e) {
     checkValidityAddress();
     checkValidityPhone();
     checkValidityEmail();
+    checkEqualNameAndSurname();
 
     if(!document.getElementById('year-of-birth').hasAttribute('disabled')) {
         checkValidityYear();
@@ -65,7 +66,6 @@ function willValidatedOnFocusout() {
 
 function checkEmailUniqueness(e) {
     if(teamMembersArray.length !== 0 && isValidated) {
-        var flag = 0;   
         var that = this;
         $emailValidationSuccess.remove();
         $emailValidationFail.remove();
@@ -148,7 +148,6 @@ function checkEqualNameAndSurname() {
     
     teamMembersArray.forEach(element => {
         if(element.name === document.getElementById('name').value && element.surname === document.getElementById('surname').value) {
-            errorsAmount++;
             document.getElementById('year-of-birth').removeAttribute('disabled');
             document.getElementById('year-of-birth').setAttribute('aria-disabled','false');
         }
